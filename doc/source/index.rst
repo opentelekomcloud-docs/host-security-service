@@ -7,7 +7,6 @@ Host Security Service (HSS) defends your Linux and Windows cloud servers from th
    :class: container-sbv
 
    .. service_card::
-      :environment: internal
       :service_type: hss
       :umn: This document helps you know about the Host Security Service (HSS) and guide you on how to use the service.
       :api-ref: This document describes application programming interfaces (APIs) of Host Security Service (HSS) and provides API parameter.
