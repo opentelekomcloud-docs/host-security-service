@@ -1,0 +1,53 @@
+:original_name: hss_01_0319.html
+
+.. _hss_01_0319:
+
+What Is Web Tamper Protection?
+==============================
+
+Web Tamper Protection (WTP) monitors website directories in real time, backs up files, and restores tampered files using the backup. WTP protects your websites from Trojans, illegal links, and tampering.
+
+Web Tamper Protection (WTP) can detect and prevent tampering of files in specified directories, including web pages, documents, and images, and quickly restore them using valid backup files.
+
+This section describes the operation process and main functions of WTP. See :ref:`Figure 1 <hss_01_0319__fig453535010386>` and :ref:`Table 1 <hss_01_0319__table6968307253>`.
+
+.. _hss_01_0319__fig453535010386:
+
+.. figure:: /_static/images/en-us_image_0000001630512626.png
+   :alt: **Figure 1** WTP operation process
+
+   **Figure 1** WTP operation process
+
+.. _hss_01_0319__table6968307253:
+
+.. table:: **Table 1** WTP operation process and function description
+
+   +--------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Type                     | Operation                                               | Description and Reference                                                                                                                                                                                                                         |
+   +==========================+=========================================================+===================================================================================================================================================================================================================================================+
+   | Preparations             | --                                                      | If no VDC operator account is available, contact an operations administrator to create a VDC administrator account, and then use the VDC administrator account to create a VDC operator.                                                          |
+   +--------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Getting Started with WTP | Applying for Quota                                      | Apply for WTP quota.                                                                                                                                                                                                                              |
+   +--------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                          | Installing an Agent                                     | The agent is provided by HSS. It runs scan tasks to scan all servers, monitors server security, and reports collected server information to the cloud protection center.                                                                          |
+   |                          |                                                         |                                                                                                                                                                                                                                                   |
+   |                          |                                                         | You can enable WTP only after the agent is installed.                                                                                                                                                                                             |
+   +--------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                          | Parameters required for configuring alarm notifications | After alarm notification is enabled, you can receive alarm notifications sent by HSS to learn about security risks facing your servers and web pages.                                                                                             |
+   |                          |                                                         |                                                                                                                                                                                                                                                   |
+   |                          |                                                         | Without this function, you have to log in to the management console to view alarms.                                                                                                                                                               |
+   +--------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                          | Enabling HSS                                            | Allocate a quota to a server and enable HSS for the server.                                                                                                                                                                                       |
+   +--------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Enable WTP               | Adding a Protected Directory                            | Add a directory to be protected by WTP.                                                                                                                                                                                                           |
+   +--------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                          | Create remote backup                                    | By default, HSS backs up the files from the protected directories to the local backup directory you specified when you added protected directories. To protect the local backup files from tampering, you must enable the remote backup function. |
+   +--------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                          | Adding a privileged process                             | After WTP is enabled, the content in the protected directories is read-only. To allow certain processes to modify files in the directories, add them to the privileged process list.                                                              |
+   +--------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                          | Set scheduled WTP protection                            | You can schedule WTP protection to allow website updates in specific periods.                                                                                                                                                                     |
+   +--------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                          | Enabling dynamic WTP                                    | Dynamic WTP protects your data while Tomcat is running, detecting dynamic data tampering in databases.                                                                                                                                            |
+   +--------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                          | View WTP reports                                        | After WTP is enabled, HSS will immediately check the protected directories you specified. You can check records about detected tampering.                                                                                                         |
+   +--------------------------+---------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
