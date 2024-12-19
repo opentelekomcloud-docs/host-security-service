@@ -10,6 +10,11 @@ Account Cracking
 
 Account cracking refers to the intruder behavior of guessing or cracking the password of an account.
 
+Baseline
+--------
+
+A baseline specifies the minimum security configuration requirements that the OS and database configurations must meet in terms of account management, password policy configuration, authorization management, service management, configuration management, network configuration, and permission management. HSS provides the cloud security practice baseline and the general security standard baseline detection to meet diverse security compliance requirements.
+
 Weak Password
 -------------
 
@@ -32,6 +37,11 @@ Ransomware emerged with the Bitcoin economy. It is a Trojan that is disguised as
 Ransomware often uses a range of algorithms to encrypt the victim's files and demand a ransom payment to get the decryption key. Digital currencies such as Bitcoin are typically used for the ransoms, making tracing and prosecuting the attackers difficult.
 
 Ransomware interrupts businesses and can cause serious economic losses. We need to know how it works and how we can prevent it.
+
+Two-Factor Authentication
+-------------------------
+
+Two-factor authentication (2FA) refers to the authentication of user login by the combination of the user password and a verification code.
 
 Web Tamper Protection
 ---------------------
@@ -57,6 +67,11 @@ Container
 ---------
 
 A container is the instance of an image and can be created, started, stopped, deleted, and suspended.
+
+Container Runtime
+-----------------
+
+Container runtime, one of the most important components of Kubernetes, manages the lifecycle of images and containers. kubelet interacts with a container runtime through the Container Runtime Interface (CRI) to manage images and containers.
 
 Security Policy
 ---------------

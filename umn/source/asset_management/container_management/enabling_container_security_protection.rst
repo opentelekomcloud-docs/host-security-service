@@ -19,16 +19,15 @@ After you enable server protection, you can view scan results after the automati
 Prerequisite
 ------------
 
--  The **Agent Status** of a server is **Online**. To check the status, choose **Host Security Service** > **Asset Management** > **Containers & Quota**.
+-  On the **Container Nodes** tab of the **Asset Management** > **Containers & Quota** page, the **Agent Status** of a server is **Online**, and the **Protection Status** of the server is **Unprotected**.
 -  You have created a node on CCE.
--  The **Protection Status** of the node is **Unprotected**.
 
 Procedure
 ---------
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **HSS**. The HSS page is displayed.
+#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **Host Security Service**. The HSS page is displayed.
 
 #. In the navigation pane, choose **Asset Management** > **Containers & Quota**.
 

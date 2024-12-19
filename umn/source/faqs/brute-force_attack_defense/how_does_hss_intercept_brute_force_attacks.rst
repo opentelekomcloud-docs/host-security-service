@@ -10,20 +10,27 @@ Types of Detectable Brute Force Attacks
 
 HSS can detect the following types of brute force attacks:
 
--  Windows: SqlServer (automatic interception is not supported currently) and Rdp
--  Linux: MySQL, vfstp, and SSH
+-  Windows: SQL Server (automated blocking is not supported) and RDP
+-  Linux: MySQL, vfstpd, and SSH
 
-If MySQL or VSFTP is installed on your server, after HSS is enabled, the agent will add rules to iptables to prevent MySQL and VSFTP brute force attacks. When detecting a brute-force attack, HSS will add the source IP address to the blocking list. The added rules are highlighted below.
+If MySQL, vfstpd, or SSH is installed on your server, after HSS is enabled, the agent will add rules to iptables to prevent brute force attacks. If a brute-force attack is detected, its source IP address will be added to the blocking list.
 
+-  Added MySQL rule: IN_HIDS_MYSQLD_DENY_DROP
+-  Added vfstpd rule: IN_HIDS_VSFTPD_DENY_DROP
+-  Added SSH rule: If SSH on the server does not support the TCP Wrapper interception mode, the SSH uses iptables for interception. Therefore, the IN_HIDS_SSHD_DENY_DROP rule will be added to iptables. If you have configured an SSH login whitelist, the IN_HIDS_SSHD_DENY_DROP and IN_HIDS_SSHD_WHITE_LIST will be added to iptables.
 
-.. figure:: /_static/images/en-us_image_0000001568317649.png
-   :alt: **Figure 1** Added rules
+Take the MySQL database as an example. :ref:`Figure 1 <hss_01_0008__fig1267516331188>` shows the new rule.
 
-   **Figure 1** Added rules
+.. _hss_01_0008__fig1267516331188:
+
+.. figure:: /_static/images/en-us_image_0000001950172004.png
+   :alt: **Figure 1** Added MySQL rule
+
+   **Figure 1** Added MySQL rule
 
 .. important::
 
-   Existing iptables rules are used for blocking brute-force attacks. You are advised to keep them. If they are deleted, HSS will not be able to protect MySQL or VSFTP from brute-force attacks.
+   Existing iptables rules are used for blocking brute-force attacks. You are advised to keep them. If they are deleted, HSS will not be able to protect MySQL, vfstpd, or SSH from brute-force attacks.
 
 How Brute Force Attacks Are Intercepted
 ---------------------------------------
@@ -34,20 +41,20 @@ HSS uses brute-force detection algorithms and an IP address blacklist to effecti
 
 .. note::
 
-   If HSS detects account cracking attacks on servers using Kunpeng EulerOS (EulerOS with ARM), it does not block the source IP addresses and only generates alarms. The SSH login IP address whitelist does not take effect for such servers.
+   If HSS detects account cracking attacks on servers using Kunpeng EulerOS (EulerOS with Arm), it does not block the source IP addresses and only generates alarms. The SSH login IP address whitelist does not take effect for such servers.
 
 Alarm Policies
 --------------
 
 -  If a hacker successfully cracks the password and logs in to a server, a real-time alarm will be immediately sent to specified recipients.
 -  If a brute-force attack and risks of account hacking are detected, a real-time alarm will be immediately sent to specified recipients.
--  If a brute-force attack is detected and failed, and no unsafe settings (such as weak passwords) are detected on the server, no real-time alarms will be sent. HSS will summarize all attacks in a day in its daily alarm report. You can also view blocked attacks on the **Detection** > **Alarms** page of the HSS console.
+-  If a brute-force attack is detected and failed, and no unsafe settings (such as weak passwords) are detected on the server, no real-time alarms will be sent. HSS will summarize all attacks in a day in its daily alarm report. You can also view blocked attacks on the **Intrusion Detection** > **Alarms** page of the HSS console.
 
 Viewing Brute Force Cracking Detection Results
 ----------------------------------------------
 
 #. Log in to the management console.
-#. In the navigation pane, choose **Detection** > **Alarms**.
+#. In the navigation pane, choose **Intrusion Detection** > **Alarms**.
 #. View the brute force cracking detection result of the server or container.
 
    -  View the brute force cracking detection result of the server.

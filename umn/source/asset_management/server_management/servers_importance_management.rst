@@ -17,7 +17,7 @@ Checking Asset Importance
 -------------------------
 
 #. Log in to the management console.
-#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **HSS**. The HSS page is displayed.
+#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **Host Security Service**. The HSS page is displayed.
 
 3. In the navigation pane, choose **Asset Management** > **Servers & Quota**. Click the **Servers** tab.
 

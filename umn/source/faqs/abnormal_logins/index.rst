@@ -7,7 +7,7 @@ Abnormal Logins
 
 -  :ref:`Why Do I Still Receive Remote Login Alarms After Configuring the Login IP Whitelist? <hss_01_0189>`
 -  :ref:`How Do I Check the User IP address of a Remote Login? <hss_01_0091>`
--  :ref:`What Can I Do If an Alarm Indicating Successful Login Is Reported? <hss_01_0113>`
+-  :ref:`How Do I Cancel the Alarm Notifications of Successful Server Logins? <hss_01_0113>`
 -  :ref:`Can I Disable Remote Login Detection? <hss_01_0120>`
 -  :ref:`How Do I Know Whether an Intrusion Succeeded? <hss_01_0192>`
 
@@ -17,6 +17,6 @@ Abnormal Logins
 
    why_do_i_still_receive_remote_login_alarms_after_configuring_the_login_ip_whitelist
    how_do_i_check_the_user_ip_address_of_a_remote_login
-   what_can_i_do_if_an_alarm_indicating_successful_login_is_reported
+   how_do_i_cancel_the_alarm_notifications_of_successful_server_logins
    can_i_disable_remote_login_detection
    how_do_i_know_whether_an_intrusion_succeeded

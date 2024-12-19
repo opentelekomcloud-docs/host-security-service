@@ -27,7 +27,7 @@ Solution
    -  If yes, perform the following steps:
 
       a. Log in to the console.
-      b. In the navigation pane, choose **Detection** > **Alarms**.
+      b. In the navigation pane, choose **Intrusion Detection** > **Alarms**.
       c. Select the **Server Alarms** tab. Click the View Details in the **Blocked IP Addresses** area. The **Blocked IP Addresses** page is displayed.
       d. Select the target attack source IP address and click **Unblock** above the list to unblock the IP address.
 

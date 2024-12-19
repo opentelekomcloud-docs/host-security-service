@@ -28,7 +28,7 @@ If you received an alarm notification indicating that your account had been crac
 
 #. Check whether the IP address that triggered the alarm is valid.
 
-   a. In the navigation pane, choose **Detection** > **Alarms**.
+   a. In the navigation pane, choose **Intrusion Detection** > **Alarms**.
    b. In the **Alarm Types** area, select **Abnormal User Behavior** > **Abnormal logins** to view abnormal login alarm events.
    c. Click the alarm event name. On the details page that is displayed, check the login IP address.
 
@@ -40,7 +40,7 @@ If you received an alarm notification indicating that your account had been crac
 
 #. Check for and eliminate malicious programs.
 
-   a. In the navigation pane, choose **Detection** > **Alarms**.
+   a. In the navigation pane, choose **Intrusion Detection** > **Alarms**.
 
    b. In the **Alarm Types** area, select **Malware** > **Unclassified malware** to filter the unclassified malware.
 
@@ -52,7 +52,7 @@ If you received an alarm notification indicating that your account had been crac
 
          To kill a malicious program in an alarm event, click **Handle** in the **Operation** column of an alarm and select **Isolate and kill**.
 
-      -  If you have confirmed that all the malicious program alarms are false, go to :ref:`Step 8 <hss_01_0183__li206265374135>`.
+      -  If you have confirmed that all the malicious program alarms are false, go to :ref:`4 <hss_01_0183__li206265374135>`.
 
 #. .. _hss_01_0183__li206265374135:
 
@@ -63,7 +63,7 @@ If you received an alarm notification indicating that your account had been crac
 
 #. **Check and handle invalid accounts.**
 
-   a. In the navigation pane, choose **Detection** > **Alarms**.
+   a. In the navigation pane, choose **Intrusion Detection** > **Alarms**.
    b. In the **Alarm Types** area, select **Abnormal User Behavior** > **Invalid accounts**. View and handle the invalid account alarms.
 
 #. Check for and fix unsafe settings.
@@ -75,7 +75,7 @@ Handling the Alarm of a Blocked Brute-force Attack
 
 If you have enabled , HSS will protect your servers against brute-force attacks.
 
-You can configure a login security policy to specify the brute force cracking determination mode and blocking duration.
+In the basic edition and higher, you can configure a login security policy to specify the brute force cracking determination mode and blocking duration.
 
 If you have not configured any login security detection policy, the following default login security policy is used: HSS will block an IP address if it has five or more brute-force attack attempts detected within 30 seconds, or 15 or more brute-force attack attempts detected within 3,600 seconds.
 
@@ -85,7 +85,7 @@ If you receive an alarm indicating that an attack source IP address is blocked, 
 
 -  Linux
 
-   On servers running the EulerOS with ARM, HSS does not block the IP addresses suspected of SSH brute-force attacks, but only generates alarms.
+   On servers running the EulerOS with Arm, HSS does not block the IP addresses suspected of SSH brute-force attacks, but only generates alarms.
 
 -  Windows
 
@@ -96,7 +96,7 @@ If you receive an alarm indicating that an attack source IP address is blocked, 
 
 #. Log in to the management console.
 
-#. Choose **Detection** > **Alarms**. Choose **Abnormal User Behavior** > **Brute-force attacks** to view account brute force events.
+#. Choose **Intrusion Detection** > **Alarms**. Choose **Abnormal User Behavior** > **Brute-force attacks** to view account brute force events.
 
    Brute-force attack alarms will be generated if:
 
@@ -105,7 +105,7 @@ If you receive an alarm indicating that an attack source IP address is blocked, 
 
 #. Check whether the login IP address triggering the alarm is valid.
 
-   -  If the IP address is valid,
+   -  If the source IP address is valid,
 
       -  To handle a false alarm, click **Handle** in the row of the alarm event. Mark this event as **Ignore** or **Add to Login Whitelist**.
 
@@ -115,7 +115,7 @@ If you receive an alarm indicating that an attack source IP address is blocked, 
 
    -  If the source IP address is invalid or unknown,
 
-      Mark this event as handled.
+      Click **Handle** in the **Operation** column of the brute-force attack event and select **Mark as handled**.
 
       Immediately log in to your server and change your password to a stronger one.
 

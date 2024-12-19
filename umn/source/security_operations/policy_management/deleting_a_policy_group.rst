@@ -5,18 +5,19 @@
 Deleting a Policy Group
 =======================
 
-Preset policy groups cannot be deleted. You can delete custom policy groups of premium edition and container edition.
+Preset policy groups cannot be deleted. You can delete custom policy groups of premium and container editions.
 
 Constraints
 -----------
 
-After a policy group is deleted, the **Policy Group** column of the servers that were associated with the group will be blank. You need to deploy a policy group for a server again by referring to :ref:`Deploying a Policy <hss_01_0024>`.
+After a policy group is deleted, the **Policy Group** column of the servers that were associated with the group will be blank. You need to deploy a policy group for a server again by referring to :ref:`Deploying a Protection Policy <hss_01_0024>`.
 
-Procedure
----------
+
+Deleting a Policy Group
+-----------------------
 
 #. Log in to the management console.
-#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **HSS**. The HSS page is displayed.
+#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **Host Security Service**. The HSS page is displayed.
 #. In the navigation tree on the left, choose **Security Operations** > **Policies**
 
 4. Click **Delete** in the **Operation** column of the target policy.

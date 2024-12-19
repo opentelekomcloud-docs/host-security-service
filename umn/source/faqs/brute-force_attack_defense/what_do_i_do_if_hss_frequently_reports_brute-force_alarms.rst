@@ -62,4 +62,4 @@ By default, HSS will block an IP address if it has five or more brute-force atta
 
 If you have enabled , you can configure a login security policy to specify the brute force cracking determination mode and blocking duration.
 
-To view the IP addresses blocked by HSS, choose **Detection** > **Alarms** and click the value above **Blocked IP Addresses**.
+To view the IP addresses blocked by HSS, choose **Intrusion Detection** > **Alarms** and click the value above **Blocked IP Addresses**.

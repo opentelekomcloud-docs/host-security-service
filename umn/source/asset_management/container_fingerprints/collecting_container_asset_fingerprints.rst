@@ -5,17 +5,17 @@
 Collecting Container Asset Fingerprints
 =======================================
 
-HSS can collect container asset fingerprints, including container accounts, ports, and processes. You can centrally check container asset information and detect risky assets in a timely manner based on the container fingerprints. This section describes how to collect container asset fingerprints.
+HSS can collect container asset fingerprints, including container clusters, services, workloads, accounts, ports, and processes. You can centrally check container asset information and detect risky assets in a timely manner based on the container fingerprints. This section describes how to collect container asset fingerprints.
 
-Prerequisite
-------------
+Constraints and Limitations
+---------------------------
 
-HSS container edition has been enabled for the server.
+The container fingerprint function is supported only by the HSS enterprise edition.
 
 Container Asset Fingerprint Collection Items
 --------------------------------------------
 
-:ref:`Table 1 <hss_01_0478__table7132214184518>` lists the collection items of container asset fingerprints. The fingerprint items are automatically collected periodically. You can customize the asset fingerprint collection period. For details, see :ref:`Asset Discovery <hss_01_0044__section1219861342>`.
+:ref:`Table 1 <hss_01_0478__table7132214184518>` lists the collection items of container asset fingerprints. The fingerprint items except clusters, services, workloads, and container instances are automatically collected periodically. You can customize the asset fingerprint collection period. For details, see :ref:`Asset Discovery <hss_01_0044__section1219861342>`.
 
 .. _hss_01_0478__table7132214184518:
 
@@ -69,6 +69,14 @@ Container Asset Fingerprint Collection Items
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+
    | Databases             | You can check details about software that provides data storage, including versions, paths, configuration files, and associated processes of all software.                                                                                                                                                          | Once a week (04:10 a.m. every Monday) |
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+
+   | Clusters              | Collect statistics on and display cluster details. You can view the type, node, version, and status of all clusters.                                                                                                                                                                                                | ``-``                                 |
+   +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+
+   | Services              | Collect statistics on and display details about services and breakpoints. You can view information about all services, such as namespaces and clusters to which the services belong.                                                                                                                                | ``-``                                 |
+   +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+
+   | Workloads             | Collect statistics on and display details about workloads (StatefulSets, deployments, DaemonSets, normal jobs, cron jobs, and container groups). You can view the status, number of instances, and namespace of all workloads.                                                                                      | ``-``                                 |
+   +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+
+   | Pods                  | Collect statistics on and display container instance details. You can view the status, pod, and cluster of all container instances.                                                                                                                                                                                 | ``-``                                 |
+   +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+
 
 Collecting the Latest Asset Fingerprints of a Single Container
 --------------------------------------------------------------
@@ -76,7 +84,7 @@ Collecting the Latest Asset Fingerprints of a Single Container
 If you want to view the latest data of assets such as web applications, web services, web frameworks, websites, middleware, and databases in real time, you can manually collect the fingerprint information.
 
 #. Log in to the management console.
-#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **HSS**. The HSS page is displayed.
+#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **Host Security Service**. The HSS page is displayed.
 #. In the navigation pane, choose **Asset Management** > **Servers & Quota**. Click the **Servers** tab.
 #. Click the name of the target server. On the server details page that is displayed, choose **Asset Fingerprints** > **Containers**.
 #. Click a fingerprint in the fingerprint list, and click **Discover Assets** on the upper area of the list on the right.
@@ -86,5 +94,15 @@ If you want to view the latest data of assets such as web applications, web serv
       Currently, only **Web Applications**, **Web Services**, **Web Frameworks**, **Websites**, **Middleware**, and **Databases** support real-time manual collection and update. Information about other types is automatically collected and updated every day.
 
 #. After the automatic execution is complete, the last scan time is updated and the latest container asset information is displayed.
+
+Collecting Clusters, Services, Workloads, and Containers Information
+--------------------------------------------------------------------
+
+The information about clusters, services, workloads, and containers is not collected automatically. If your assets change, manually collect the latest data referring to this section.
+
+#. Log in to the management console.
+#. In the navigation pane, choose **Asset Management** > **Container Fingerprints**.
+#. Choose **Clusters** and click **Synchronize** in the upper left corner.
+#. **Last Synchronized** indicates the CCE cluster, service, workload, and container data is synchronized successfully.
 
 .. |image1| image:: /_static/images/en-us_image_0000001517477398.png

@@ -5,16 +5,16 @@
 Policy Management
 =================
 
--  :ref:`Overview <hss_01_0045>`
--  :ref:`Creating a Policy Group <hss_01_0368>`
+-  :ref:`Policy Management Overview <hss_01_0045>`
 -  :ref:`Configuring Policies <hss_01_0044>`
+-  :ref:`Creating a Custom Policy Group <hss_01_0368>`
 -  :ref:`Deleting a Policy Group <hss_01_0596>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   overview
-   creating_a_policy_group
+   policy_management_overview
    configuring_policies
+   creating_a_custom_policy_group
    deleting_a_policy_group

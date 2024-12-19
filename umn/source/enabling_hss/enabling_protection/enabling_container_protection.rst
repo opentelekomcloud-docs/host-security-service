@@ -1,6 +1,6 @@
-:original_name: hss_01_0293.html
+:original_name: hss_01_0295.html
 
-.. _hss_01_0293:
+.. _hss_01_0295:
 
 Enabling Container Protection
 =============================
@@ -17,16 +17,15 @@ After you enable server protection, you can view scan results after the automati
 Prerequisites
 -------------
 
--  The **Agent Status** of a server is **Online**. To check the status, choose **Asset Management** > **Containers & Quota**.
+-  On the HSS console, choose **Asset Management** > **Containers & Quota**. The **Agent Status** of the node is **Online** and the **Protection Status** is **Unprotected**.
 -  You have created nodes on CCE.
--  The **Protection Status** of the node is **Unprotected**.
 
 Procedure
 ---------
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **HSS**. The HSS page is displayed.
+#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **Host Security Service**. The HSS page is displayed.
 
 #. In the navigation pane, choose **Asset Management** > **Containers & Quota**.
 
@@ -52,8 +51,6 @@ Related Operations
 **Disabling protection for a node**
 
 Choose **Asset Management** > **Containers & Quota**, click the **Container Nodes** tab, and click **Nodes**. In the **Operation** column, click **Disable Protection**.
-
-If protection is disabled, the quota status will change from occupied to idle. You can allocate the idle quota to another node to avoid quota waste.
 
 .. important::
 
