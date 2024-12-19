@@ -15,15 +15,16 @@ You can switch to the enterprise or premium edition.
 Prerequisites
 -------------
 
--  The server whose protection quota is to be changed is in the **Protected** state.
+-  Choose **Asset Management** > **Servers & Quota** page. On the **Servers** tab, the protection status of a server is **Protected**.
 -  Before switching to a lower edition, check the server, handle known risks, and record operation information to prevent O&M errors and attacks.
 
-Procedure
----------
+
+Switching the HSS Quota Edition
+-------------------------------
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **HSS**. The HSS page is displayed.
+#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **Host Security Service**. The HSS page is displayed.
 
 #. In the navigation pane, choose **Asset Management** > **Servers & Quota**. Click the **Servers** tab.
 

@@ -1,20 +1,16 @@
-:original_name: hss_01_0553.html
+:original_name: hss_01_0552.html
 
-.. _hss_01_0553:
+.. _hss_01_0552:
 
 Security Report
 ===============
 
--  :ref:`Checking a Security Report <hss_01_0554>`
--  :ref:`Subscribing to a Security Report <hss_01_0555>`
--  :ref:`Creating a Security Report <hss_01_0556>`
--  :ref:`Managing Security Reports <hss_01_0557>`
+-  :ref:`Security Report <hss_01_0614>`
+-  :ref:`Free Scan <hss_01_0619>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   checking_a_security_report
-   subscribing_to_a_security_report
-   creating_a_security_report
-   managing_security_reports
+   security_report/index
+   free_scan
