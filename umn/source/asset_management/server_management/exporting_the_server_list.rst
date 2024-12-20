@@ -7,12 +7,12 @@ Exporting the Server List
 
 This section describes how to export the server protection list to your local PC.
 
-Procedure
----------
+Exporting the Server List to the Local PC
+-----------------------------------------
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **HSS**. The HSS page is displayed.
+#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **Host Security Service**. The HSS page is displayed.
 
 #. In the navigation pane on the left, choose **Asset Management** > **Servers & Quota**.
 
@@ -23,7 +23,7 @@ Procedure
       The details of up to 1,000 servers can be exported at a time.
 
 
-   .. figure:: /_static/images/en-us_image_0000001563791430.png
+   .. figure:: /_static/images/en-us_image_0000002051177784.png
       :alt: **Figure 1** Exporting the server list
 
       **Figure 1** Exporting the server list

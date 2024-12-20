@@ -5,14 +5,14 @@
 Enabling Protection
 ===================
 
--  :ref:`Enabling the Enterprise, or Premium Edition <hss_01_0230>`
--  :ref:`Enabling Web Tamper Protection <hss_01_0214>`
--  :ref:`Enabling Container Protection <hss_01_0293>`
+-  :ref:`Enabling the Enterprise/Premium Edition <hss_01_0397>`
+-  :ref:`Enabling Web Tamper Protection <hss_01_0309>`
+-  :ref:`Enabling Container Protection <hss_01_0295>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   enabling_the_enterprise_or_premium_edition
+   enabling_the_enterprise_premium_edition
    enabling_web_tamper_protection
    enabling_container_protection

@@ -7,11 +7,6 @@ Collecting Server Asset Fingerprints
 
 HSS can collect server asset fingerprints, including information about ports, processes, web applications, web services, web frameworks, and auto-started items. You can centrally check server asset information and detect risky assets in a timely manner based on the server fingerprints. This section describes server asset fingerprints and their collection method.
 
-Prerequisite
-------------
-
-HSS enterprise edition, premium edition, WTP edition, or container edition has been enabled for the server.
-
 Server Asset Fingerprint Collection Items
 -----------------------------------------
 
@@ -79,10 +74,10 @@ Server Asset Fingerprint Collection Items
 Collecting the Latest Asset Fingerprints of a Single Server
 -----------------------------------------------------------
 
-If you want to obtain the latest data of assets such as web applications, web services, web frameworks, websites, middleware, kernel modules, and databases, in real time, you can manually collect fingerprint information.
+If you want to obtain the latest data of assets such as web applications, web services, web frameworks, websites, middleware, kernel modules, and databases in real time, you can manually collect fingerprint information.
 
 #. Log in to the management console.
-#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **HSS**. The HSS page is displayed.
+#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **Host Security Service**. The HSS page is displayed.
 #. In the navigation pane, choose **Asset Management** > **Servers & Quota**. Click the **Servers** tab.
 
    .. note::

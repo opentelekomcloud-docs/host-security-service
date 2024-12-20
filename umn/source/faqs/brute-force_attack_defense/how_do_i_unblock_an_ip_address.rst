@@ -18,6 +18,6 @@ Procedure
 ---------
 
 #. Log in to the management console.
-#. In the navigation tree on the left, choose **Detection** > **Alarms** and click **Server Alarms**.
+#. In the navigation tree on the left, choose **Intrusion Detection** > **Alarms** and click **Server Alarms**.
 #. In the **Alarm Statistics** area, click **View Details** under **Blocked IP Addresses**.
 #. In the blocked IP address list, select an IP address and click **Cancel Interception**.

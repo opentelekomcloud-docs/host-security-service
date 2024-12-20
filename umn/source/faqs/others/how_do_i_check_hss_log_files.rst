@@ -31,15 +31,15 @@ Log Retention
 +-----------------------+-----------------------------------------------------------------+--------------+--------------------+------------------------------------+
 | Log File              | Description                                                     | Maximum Size | Retained File      | Retention Period                   |
 +=======================+=================================================================+==============+====================+====================================+
-| hostwatch.log         | Records logs generated during the running of daemon processes.  | 10 MB        | Latest eight files | Until the HSS agent is uninstalled |
+| hostwatch.log         | Records logs generated during the running of daemon processes.  | 10MB         | Latest eight files | Until the HSS agent is uninstalled |
 +-----------------------+-----------------------------------------------------------------+--------------+--------------------+------------------------------------+
-| hostguard.log         | Records logs generated during the running of working processes. | 10 MB        | Latest eight files |                                    |
+| hostguard.log         | Records logs generated during the running of working processes. | 10MB         | Latest eight files |                                    |
 +-----------------------+-----------------------------------------------------------------+--------------+--------------------+------------------------------------+
-| upgrade.log           | Records logs generated during version upgrading.                | 10 MB        | Latest eight files |                                    |
+| upgrade.log           | Records logs generated during version upgrading.                | 10MB         | Latest eight files |                                    |
 +-----------------------+-----------------------------------------------------------------+--------------+--------------------+------------------------------------+
-| hostguard-service.log | Records logs (scripts) generated when the service starts.       | 100 kB       | Latest two logs    |                                    |
+| hostguard-service.log | Records logs (scripts) generated when the service starts.       | 100kB        | Latest two logs    |                                    |
 +-----------------------+-----------------------------------------------------------------+--------------+--------------------+------------------------------------+
-| config_tool.log       | Records logs (programs) generated when the service starts.      | 10 kB        | Latest two logs    |                                    |
+| config_tool.log       | Records logs (programs) generated when the service starts.      | 10kB         | Latest two logs    |                                    |
 +-----------------------+-----------------------------------------------------------------+--------------+--------------------+------------------------------------+
-| engine.log            | Records logs generated when the service exits.                  | 10 kB        | Latest two logs    |                                    |
+| engine.log            | Records logs generated when the service exits.                  | 10kB         | Latest two logs    |                                    |
 +-----------------------+-----------------------------------------------------------------+--------------+--------------------+------------------------------------+

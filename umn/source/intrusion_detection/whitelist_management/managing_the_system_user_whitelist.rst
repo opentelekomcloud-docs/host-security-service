@@ -7,18 +7,14 @@ Managing the System User Whitelist
 
 HSS generates risky account alarms when non-root users are added to the root user group. You can add the trusted non-root users to the system user whitelist. HSS does not generate risky account alarms for users in the system user whitelist.
 
-Procedure
----------
+Adding an Item to the System User Whitelist
+-------------------------------------------
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **HSS**. The HSS page is displayed.
+#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **Host Security Service**. The HSS page is displayed.
 
-#. In the navigation pane on the left, choose **Detection** > **Whitelists**. The **Whitelists** page is displayed.
-
-#. (Optional) In the upper left corner of the **Whitelists** page, select the enterprise project to which the server belongs or **All projects** for **Enterprise Project**.
-
-   If you have not enabled the enterprise project function, skip this step.
+#. In the navigation pane on the left, choose **Intrusion Detection** > **Whitelists**.
 
 #. Click the **System User Whitelist** tab and click **Add**.
 
@@ -32,10 +28,8 @@ Procedure
 
 #. Click **OK**.
 
-Related Operations
-------------------
-
-**Modifying a System User Whitelist**
+Modifying the System User Whitelist
+-----------------------------------
 
 #. (Optional) In the upper left corner of the **Whitelists** page, select the enterprise project to which the server belongs or **All projects** for **Enterprise Project**.
 
@@ -45,7 +39,8 @@ Related Operations
 
 #. In the **Modify System User Whitelist** dialog box, modify the information and click **OK**.
 
-**Deleting a System User Whitelist**
+Removing an Item from the System User Whitelist
+-----------------------------------------------
 
 #. In the row of the target system user whitelist, click **Delete** in the **Operation** column.
 

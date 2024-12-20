@@ -9,7 +9,7 @@ You can configure the alarm whitelist to reduce false alarms. Events can be dele
 
 Whitelisted events will not trigger alarms.
 
-On the **Alarms** page, you can add falsely reported alarms to the alarm whitelist. After an alarm is added to the whitelist, HSS will not generate alarms or collect statistics on it.
+On the **Alarms** page, you can add falsely reported alarms to the alarm whitelist. After an alarm is added to the whitelist, HSS will not generate alarms on it.
 
 Adding Events to the Alarm Whitelist
 ------------------------------------
@@ -47,36 +47,42 @@ Perform the following steps to check the alarm whitelist:
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **HSS**. The HSS page is displayed.
+#. Click |image1| in the upper left corner of the page, select a region, and choose **Security** > **Host Security Service**. The HSS page is displayed.
 
-#. In the navigation pane on the left, choose **Detection** > **Whitelists**.
+#. In the navigation pane on the left, choose **Intrusion Detection** > **Whitelists**.
 
-#. Click **Alarm Whitelist** to view the added alarm whitelist. For more information, see :ref:`Table 2 <hss_01_0028__table1213284433320>`.
+#. Click the **Alarm Whitelist** tab to view the whitelist. For more information, see :ref:`Table 2 <hss_01_0028__table1213284433320>`.
 
    .. _hss_01_0028__table1213284433320:
 
    .. table:: **Table 2** Parameter description
 
-      ================== =============================================
-      Parameter Name     Description
-      ================== =============================================
-      Alarm Type         Name of the alarm whitelist type.
-      SHA256             Hash value of the target file.
-      Description        Description of the target whitelist.
-      Added              Time when an alarm is added to the whitelist.
-      Enterprise Project Enterprise project
-      ================== =============================================
+      +--------------------+----------------------------------------------------------------------------+
+      | Parameter Name     | Description                                                                |
+      +====================+============================================================================+
+      | Alarm Type         | Name of the alarm whitelist type.                                          |
+      +--------------------+----------------------------------------------------------------------------+
+      | Whitelist Field    | Whitelisted file field                                                     |
+      +--------------------+----------------------------------------------------------------------------+
+      | Wildcard           | Logic used by a whitelisted rule, which can be **Equals** or **Contains**. |
+      +--------------------+----------------------------------------------------------------------------+
+      | Whitelist Rule     | Whitelisted rule ID                                                        |
+      +--------------------+----------------------------------------------------------------------------+
+      | Description        | Description of the target whitelist.                                       |
+      +--------------------+----------------------------------------------------------------------------+
+      | Added              | Time when an alarm is added to the whitelist.                              |
+      +--------------------+----------------------------------------------------------------------------+
+      | Enterprise Project | Enterprise project                                                         |
+      +--------------------+----------------------------------------------------------------------------+
 
-Related Operations
-------------------
-
-**Removing alarms from the whitelist**
+Removing an Alarm from the Whitelist
+------------------------------------
 
 To remove an alarm from the whitelist, select it and click **Delete**.
 
 .. note::
 
    -  Exercise caution when performing this operation. Whitelisted alarms cannot be restored after removal, and will be reported once triggered.
-   -  After an alarm is deleted from the whitelist, the handling status of the events associated with the alarm is not updated. To change the status, choose **Detection** > **Alarms**, click **Handle** in the **Operation** column of an event, and select **Remove from whitelist**.
+   -  After an alarm is deleted from the whitelist, the handling status of the events associated with the alarm is not updated. To change the status, choose **Intrusion Detection** > **Alarms**, click **Handle** in the **Operation** column of an event, and select **Remove from whitelist**.
 
 .. |image1| image:: /_static/images/en-us_image_0000001517477398.png
