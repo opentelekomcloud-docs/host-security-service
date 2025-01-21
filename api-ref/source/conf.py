@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'hss-api-ref.tex',
-     u'Host Security Service - API Reference',
+    u'Host Security Service - API Reference',
      u'OpenTelekomCloud', 'manual'),
 ]
 
